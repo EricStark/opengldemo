@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/joma/cpp_project/opengl_test/script/../third_dependencies/GLFW/glfw-3.4/include -I/Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/include
+CXX_INCLUDES = -I/Users/joma/cpp_project/opengl_test/./third_dependencies/GLFW/glfw-3.4/include -I/Users/joma/cpp_project/opengl_test/./third_dependencies/GLEW/glew-2.1.0/include -I/Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/include
 
 CXX_FLAGSarm64 = -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2
 

@@ -57,7 +57,7 @@ RM = /opt/homebrew/Cellar/cmake/3.28.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/joma/cpp_project/opengl_test/script
+CMAKE_SOURCE_DIR = /Users/joma/cpp_project/opengl_test
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/joma/cpp_project/opengl_test/build
@@ -185,7 +185,7 @@ uninstall: cmake_check_build_system
 
 # fast build rule for target.
 uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f /Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/build/CMakeFiles/uninstall.dir/build.make /Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/build/CMakeFiles/uninstall.dir/build
+	$(MAKE) $(MAKESILENT) -f third_dependencies/GLFW/glfw-3.4/CMakeFiles/uninstall.dir/build.make third_dependencies/GLFW/glfw-3.4/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 #=============================================================================
@@ -198,7 +198,7 @@ glfw: cmake_check_build_system
 
 # fast build rule for target.
 glfw/fast:
-	$(MAKE) $(MAKESILENT) -f /Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/build/src/CMakeFiles/glfw.dir/build.make /Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/build/src/CMakeFiles/glfw.dir/build
+	$(MAKE) $(MAKESILENT) -f third_dependencies/GLFW/glfw-3.4/src/CMakeFiles/glfw.dir/build.make third_dependencies/GLFW/glfw-3.4/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
 #=============================================================================
@@ -211,32 +211,84 @@ update_mappings: cmake_check_build_system
 
 # fast build rule for target.
 update_mappings/fast:
-	$(MAKE) $(MAKESILENT) -f /Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/build/src/CMakeFiles/update_mappings.dir/build.make /Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/build/src/CMakeFiles/update_mappings.dir/build
+	$(MAKE) $(MAKESILENT) -f third_dependencies/GLFW/glfw-3.4/src/CMakeFiles/update_mappings.dir/build.make third_dependencies/GLFW/glfw-3.4/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
 
-Users/joma/cpp_project/opengl_test/src/test.o: Users/joma/cpp_project/opengl_test/src/test.cpp.o
-.PHONY : Users/joma/cpp_project/opengl_test/src/test.o
+#=============================================================================
+# Target rules for targets named glew
+
+# Build rule for target.
+glew: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glew
+.PHONY : glew
+
+# fast build rule for target.
+glew/fast:
+	$(MAKE) $(MAKESILENT) -f third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build
+.PHONY : glew/fast
+
+#=============================================================================
+# Target rules for targets named glew_s
+
+# Build rule for target.
+glew_s: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glew_s
+.PHONY : glew_s
+
+# fast build rule for target.
+glew_s/fast:
+	$(MAKE) $(MAKESILENT) -f third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build
+.PHONY : glew_s/fast
+
+#=============================================================================
+# Target rules for targets named glewinfo
+
+# Build rule for target.
+glewinfo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glewinfo
+.PHONY : glewinfo
+
+# fast build rule for target.
+glewinfo/fast:
+	$(MAKE) $(MAKESILENT) -f third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/build.make third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/build
+.PHONY : glewinfo/fast
+
+#=============================================================================
+# Target rules for targets named visualinfo
+
+# Build rule for target.
+visualinfo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 visualinfo
+.PHONY : visualinfo
+
+# fast build rule for target.
+visualinfo/fast:
+	$(MAKE) $(MAKESILENT) -f third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/build.make third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/build
+.PHONY : visualinfo/fast
+
+src/test.o: src/test.cpp.o
+.PHONY : src/test.o
 
 # target to build an object file
-Users/joma/cpp_project/opengl_test/src/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyApp.dir/build.make CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.o
-.PHONY : Users/joma/cpp_project/opengl_test/src/test.cpp.o
+src/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyApp.dir/build.make CMakeFiles/MyApp.dir/src/test.cpp.o
+.PHONY : src/test.cpp.o
 
-Users/joma/cpp_project/opengl_test/src/test.i: Users/joma/cpp_project/opengl_test/src/test.cpp.i
-.PHONY : Users/joma/cpp_project/opengl_test/src/test.i
+src/test.i: src/test.cpp.i
+.PHONY : src/test.i
 
 # target to preprocess a source file
-Users/joma/cpp_project/opengl_test/src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyApp.dir/build.make CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.i
-.PHONY : Users/joma/cpp_project/opengl_test/src/test.cpp.i
+src/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyApp.dir/build.make CMakeFiles/MyApp.dir/src/test.cpp.i
+.PHONY : src/test.cpp.i
 
-Users/joma/cpp_project/opengl_test/src/test.s: Users/joma/cpp_project/opengl_test/src/test.cpp.s
-.PHONY : Users/joma/cpp_project/opengl_test/src/test.s
+src/test.s: src/test.cpp.s
+.PHONY : src/test.s
 
 # target to generate assembly for a file
-Users/joma/cpp_project/opengl_test/src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyApp.dir/build.make CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.s
-.PHONY : Users/joma/cpp_project/opengl_test/src/test.cpp.s
+src/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyApp.dir/build.make CMakeFiles/MyApp.dir/src/test.cpp.s
+.PHONY : src/test.cpp.s
 
 # Help Target
 help:
@@ -253,10 +305,14 @@ help:
 	@echo "... uninstall"
 	@echo "... update_mappings"
 	@echo "... MyApp"
+	@echo "... glew"
+	@echo "... glew_s"
+	@echo "... glewinfo"
 	@echo "... glfw"
-	@echo "... Users/joma/cpp_project/opengl_test/src/test.o"
-	@echo "... Users/joma/cpp_project/opengl_test/src/test.i"
-	@echo "... Users/joma/cpp_project/opengl_test/src/test.s"
+	@echo "... visualinfo"
+	@echo "... src/test.o"
+	@echo "... src/test.i"
+	@echo "... src/test.s"
 .PHONY : help
 
 

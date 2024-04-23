@@ -1,4 +1,4 @@
-# Install script for directory: /Users/joma/cpp_project/opengl_test/script
+# Install script for directory: /Users/joma/cpp_project/opengl_test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/build/cmake_install.cmake")
+  include("/Users/joma/cpp_project/opengl_test/build/third_dependencies/GLFW/glfw-3.4/cmake_install.cmake")
+  include("/Users/joma/cpp_project/opengl_test/build/third_dependencies/GLEW/glew-2.1.0/build/cmake/cmake_install.cmake")
 
 endif()
 

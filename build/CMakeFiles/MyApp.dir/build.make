@@ -53,7 +53,7 @@ RM = /opt/homebrew/Cellar/cmake/3.28.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/joma/cpp_project/opengl_test/script
+CMAKE_SOURCE_DIR = /Users/joma/cpp_project/opengl_test
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/joma/cpp_project/opengl_test/build
@@ -69,36 +69,37 @@ include CMakeFiles/MyApp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MyApp.dir/flags.make
 
-CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.o: CMakeFiles/MyApp.dir/flags.make
-CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.o: /Users/joma/cpp_project/opengl_test/src/test.cpp
-CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.o: CMakeFiles/MyApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joma/cpp_project/opengl_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.o -MF CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.o.d -o CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.o -c /Users/joma/cpp_project/opengl_test/src/test.cpp
+CMakeFiles/MyApp.dir/src/test.cpp.o: CMakeFiles/MyApp.dir/flags.make
+CMakeFiles/MyApp.dir/src/test.cpp.o: /Users/joma/cpp_project/opengl_test/src/test.cpp
+CMakeFiles/MyApp.dir/src/test.cpp.o: CMakeFiles/MyApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/joma/cpp_project/opengl_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyApp.dir/src/test.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyApp.dir/src/test.cpp.o -MF CMakeFiles/MyApp.dir/src/test.cpp.o.d -o CMakeFiles/MyApp.dir/src/test.cpp.o -c /Users/joma/cpp_project/opengl_test/src/test.cpp
 
-CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joma/cpp_project/opengl_test/src/test.cpp > CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.i
+CMakeFiles/MyApp.dir/src/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyApp.dir/src/test.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/joma/cpp_project/opengl_test/src/test.cpp > CMakeFiles/MyApp.dir/src/test.cpp.i
 
-CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joma/cpp_project/opengl_test/src/test.cpp -o CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.s
+CMakeFiles/MyApp.dir/src/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyApp.dir/src/test.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/joma/cpp_project/opengl_test/src/test.cpp -o CMakeFiles/MyApp.dir/src/test.cpp.s
 
 # Object files for target MyApp
 MyApp_OBJECTS = \
-"CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.o"
+"CMakeFiles/MyApp.dir/src/test.cpp.o"
 
 # External object files for target MyApp
 MyApp_EXTERNAL_OBJECTS =
 
-MyApp: CMakeFiles/MyApp.dir/Users/joma/cpp_project/opengl_test/src/test.cpp.o
-MyApp: CMakeFiles/MyApp.dir/build.make
-MyApp: /Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/build/src/libglfw.3.4.dylib
-MyApp: CMakeFiles/MyApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/joma/cpp_project/opengl_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MyApp"
+bin/MyApp: CMakeFiles/MyApp.dir/src/test.cpp.o
+bin/MyApp: CMakeFiles/MyApp.dir/build.make
+bin/MyApp: lib/libglfw.3.4.dylib
+bin/MyApp: lib/libGLEW.2.1.0.dylib
+bin/MyApp: CMakeFiles/MyApp.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/joma/cpp_project/opengl_test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/MyApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/MyApp.dir/build: MyApp
+CMakeFiles/MyApp.dir/build: bin/MyApp
 .PHONY : CMakeFiles/MyApp.dir/build
 
 CMakeFiles/MyApp.dir/clean:
@@ -106,6 +107,6 @@ CMakeFiles/MyApp.dir/clean:
 .PHONY : CMakeFiles/MyApp.dir/clean
 
 CMakeFiles/MyApp.dir/depend:
-	cd /Users/joma/cpp_project/opengl_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/joma/cpp_project/opengl_test/script /Users/joma/cpp_project/opengl_test/script /Users/joma/cpp_project/opengl_test/build /Users/joma/cpp_project/opengl_test/build /Users/joma/cpp_project/opengl_test/build/CMakeFiles/MyApp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/joma/cpp_project/opengl_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/joma/cpp_project/opengl_test /Users/joma/cpp_project/opengl_test /Users/joma/cpp_project/opengl_test/build /Users/joma/cpp_project/opengl_test/build /Users/joma/cpp_project/opengl_test/build/CMakeFiles/MyApp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/MyApp.dir/depend
 
