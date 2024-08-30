@@ -1,4 +1,6 @@
 #version 330 core
+// 只有我们真的具有--多个可供写入的缓冲区--时这种方式才能工作。
+// 使用多个像素着色器输出的必要条件是，有多个颜色缓冲附加到了当前绑定的帧缓冲对象上
 layout (location = 0) out vec4 FragColor;
 layout (location = 1) out vec4 BrightColor;
 

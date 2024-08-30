@@ -89,7 +89,8 @@ int main()
     unsigned int containerTexture = loadTexture("/Users/joma/cpp_project/opengl_test/assets/container2.png", true); // note that we're loading the texture as an SRGB texture
 
     // configure (floating point) framebuffers
-    // ---------------------------------------
+    // ==============================================================================
+    // ==============================================================================
     unsigned int hdrFBO;
     glGenFramebuffers(1, &hdrFBO);
     glBindFramebuffer(GL_FRAMEBUFFER, hdrFBO);
@@ -120,6 +121,8 @@ int main()
     if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
         std::cout << "Framebuffer not complete!" << std::endl;
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    // ==============================================================================
+    // ==============================================================================
 
     // ping-pong-framebuffer for blurring
     unsigned int pingpongFBO[2];
@@ -187,7 +190,8 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // 1. render scene into floating point framebuffer
-        // -----------------------------------------------
+        // ==============================================================================
+        // ==============================================================================
         glBindFramebuffer(GL_FRAMEBUFFER, hdrFBO);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
@@ -265,9 +269,12 @@ int main()
             renderCube();
         }
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
+        // ==============================================================================
+        // ==============================================================================
 
         // 2. blur bright fragments with two-pass Gaussian Blur 
-        // --------------------------------------------------
+        // ==============================================================================
+        // ==============================================================================
         bool horizontal = true, first_iteration = true;
         unsigned int amount = 10;
         shaderBlur.use();
@@ -282,9 +289,12 @@ int main()
                 first_iteration = false;
         }
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
+        // ==============================================================================
+        // ==============================================================================
 
         // 3. now render floating point color buffer to 2D quad and tonemap HDR colors to default framebuffer's (clamped) color range
-        // --------------------------------------------------------------------------------------------------------------------------
+        // ==============================================================================
+        // ==============================================================================
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         shaderBloomFinal.use();
         glActiveTexture(GL_TEXTURE0);
@@ -294,7 +304,8 @@ int main()
         shaderBloomFinal.setInt("bloom", bloom);
         shaderBloomFinal.setFloat("exposure", exposure);
         renderQuad();
-
+        // ==============================================================================
+        // ==============================================================================
         std::cout << "bloom: " << (bloom ? "on" : "off") << "| exposure: " << exposure << std::endl;
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
