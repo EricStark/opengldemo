@@ -6,7 +6,7 @@ C_DEFINES = -D_GLFW_BUILD_DLL -D_GLFW_COCOA
 
 C_INCLUDES = -I/Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/include -I/Users/joma/cpp_project/opengl_test/third_dependencies/GLFW/glfw-3.4/src -I/Users/joma/cpp_project/opengl_test/build/third_dependencies/GLFW/glfw-3.4/src
 
-C_FLAGSarm64 = -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -fPIC -Wall -fvisibility=hidden
+C_FLAGSarm64 = -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -fPIC -Wall -fvisibility=hidden
 
-C_FLAGS = -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -fPIC -Wall -fvisibility=hidden
+C_FLAGS = -g -std=c99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -fPIC -Wall -fvisibility=hidden
 

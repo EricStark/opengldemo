@@ -163,17 +163,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MyApp
+# Target rules for targets named app
 
 # Build rule for target.
-MyApp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyApp
-.PHONY : MyApp
+app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
+.PHONY : app
 
 # fast build rule for target.
-MyApp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyApp.dir/build.make CMakeFiles/MyApp.dir/build
-.PHONY : MyApp/fast
+app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+.PHONY : app/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -215,80 +215,78 @@ update_mappings/fast:
 .PHONY : update_mappings/fast
 
 #=============================================================================
-# Target rules for targets named glew
+# Target rules for targets named glm
 
 # Build rule for target.
-glew: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glew
-.PHONY : glew
+glm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glm
+.PHONY : glm
 
 # fast build rule for target.
-glew/fast:
-	$(MAKE) $(MAKESILENT) -f third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build.make third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glew.dir/build
-.PHONY : glew/fast
+glm/fast:
+	$(MAKE) $(MAKESILENT) -f third_dependencies/glm/glm/CMakeFiles/glm.dir/build.make third_dependencies/glm/glm/CMakeFiles/glm.dir/build
+.PHONY : glm/fast
 
 #=============================================================================
-# Target rules for targets named glew_s
+# Target rules for targets named soil
 
 # Build rule for target.
-glew_s: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glew_s
-.PHONY : glew_s
+soil: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 soil
+.PHONY : soil
 
 # fast build rule for target.
-glew_s/fast:
-	$(MAKE) $(MAKESILENT) -f third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build.make third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glew_s.dir/build
-.PHONY : glew_s/fast
+soil/fast:
+	$(MAKE) $(MAKESILENT) -f third_dependencies/soil/CMakeFiles/soil.dir/build.make third_dependencies/soil/CMakeFiles/soil.dir/build
+.PHONY : soil/fast
 
-#=============================================================================
-# Target rules for targets named glewinfo
-
-# Build rule for target.
-glewinfo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glewinfo
-.PHONY : glewinfo
-
-# fast build rule for target.
-glewinfo/fast:
-	$(MAKE) $(MAKESILENT) -f third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/build.make third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/glewinfo.dir/build
-.PHONY : glewinfo/fast
-
-#=============================================================================
-# Target rules for targets named visualinfo
-
-# Build rule for target.
-visualinfo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 visualinfo
-.PHONY : visualinfo
-
-# fast build rule for target.
-visualinfo/fast:
-	$(MAKE) $(MAKESILENT) -f third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/build.make third_dependencies/GLEW/glew-2.1.0/build/cmake/CMakeFiles/visualinfo.dir/build
-.PHONY : visualinfo/fast
-
-src/test.o: src/test.cpp.o
-.PHONY : src/test.o
+src/bloom/bloom.o: src/bloom/bloom.cpp.o
+.PHONY : src/bloom/bloom.o
 
 # target to build an object file
-src/test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyApp.dir/build.make CMakeFiles/MyApp.dir/src/test.cpp.o
-.PHONY : src/test.cpp.o
+src/bloom/bloom.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/bloom/bloom.cpp.o
+.PHONY : src/bloom/bloom.cpp.o
 
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
+src/bloom/bloom.i: src/bloom/bloom.cpp.i
+.PHONY : src/bloom/bloom.i
 
 # target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyApp.dir/build.make CMakeFiles/MyApp.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
+src/bloom/bloom.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/bloom/bloom.cpp.i
+.PHONY : src/bloom/bloom.cpp.i
 
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
+src/bloom/bloom.s: src/bloom/bloom.cpp.s
+.PHONY : src/bloom/bloom.s
 
 # target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyApp.dir/build.make CMakeFiles/MyApp.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+src/bloom/bloom.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/bloom/bloom.cpp.s
+.PHONY : src/bloom/bloom.cpp.s
+
+third_dependencies/glad/src/glad.o: third_dependencies/glad/src/glad.c.o
+.PHONY : third_dependencies/glad/src/glad.o
+
+# target to build an object file
+third_dependencies/glad/src/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/third_dependencies/glad/src/glad.c.o
+.PHONY : third_dependencies/glad/src/glad.c.o
+
+third_dependencies/glad/src/glad.i: third_dependencies/glad/src/glad.c.i
+.PHONY : third_dependencies/glad/src/glad.i
+
+# target to preprocess a source file
+third_dependencies/glad/src/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/third_dependencies/glad/src/glad.c.i
+.PHONY : third_dependencies/glad/src/glad.c.i
+
+third_dependencies/glad/src/glad.s: third_dependencies/glad/src/glad.c.s
+.PHONY : third_dependencies/glad/src/glad.s
+
+# target to generate assembly for a file
+third_dependencies/glad/src/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/third_dependencies/glad/src/glad.c.s
+.PHONY : third_dependencies/glad/src/glad.c.s
 
 # Help Target
 help:
@@ -304,15 +302,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... update_mappings"
-	@echo "... MyApp"
-	@echo "... glew"
-	@echo "... glew_s"
-	@echo "... glewinfo"
+	@echo "... app"
 	@echo "... glfw"
-	@echo "... visualinfo"
-	@echo "... src/test.o"
-	@echo "... src/test.i"
-	@echo "... src/test.s"
+	@echo "... glm"
+	@echo "... soil"
+	@echo "... src/bloom/bloom.o"
+	@echo "... src/bloom/bloom.i"
+	@echo "... src/bloom/bloom.s"
+	@echo "... third_dependencies/glad/src/glad.o"
+	@echo "... third_dependencies/glad/src/glad.i"
+	@echo "... third_dependencies/glad/src/glad.s"
 .PHONY : help
 
 
