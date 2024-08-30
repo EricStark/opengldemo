@@ -240,29 +240,29 @@ soil/fast:
 	$(MAKE) $(MAKESILENT) -f third_dependencies/soil/CMakeFiles/soil.dir/build.make third_dependencies/soil/CMakeFiles/soil.dir/build
 .PHONY : soil/fast
 
-src/bloom/bloom.o: src/bloom/bloom.cpp.o
-.PHONY : src/bloom/bloom.o
+src/sky_box/cubemaps_skybox.o: src/sky_box/cubemaps_skybox.cpp.o
+.PHONY : src/sky_box/cubemaps_skybox.o
 
 # target to build an object file
-src/bloom/bloom.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/bloom/bloom.cpp.o
-.PHONY : src/bloom/bloom.cpp.o
+src/sky_box/cubemaps_skybox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/sky_box/cubemaps_skybox.cpp.o
+.PHONY : src/sky_box/cubemaps_skybox.cpp.o
 
-src/bloom/bloom.i: src/bloom/bloom.cpp.i
-.PHONY : src/bloom/bloom.i
+src/sky_box/cubemaps_skybox.i: src/sky_box/cubemaps_skybox.cpp.i
+.PHONY : src/sky_box/cubemaps_skybox.i
 
 # target to preprocess a source file
-src/bloom/bloom.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/bloom/bloom.cpp.i
-.PHONY : src/bloom/bloom.cpp.i
+src/sky_box/cubemaps_skybox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/sky_box/cubemaps_skybox.cpp.i
+.PHONY : src/sky_box/cubemaps_skybox.cpp.i
 
-src/bloom/bloom.s: src/bloom/bloom.cpp.s
-.PHONY : src/bloom/bloom.s
+src/sky_box/cubemaps_skybox.s: src/sky_box/cubemaps_skybox.cpp.s
+.PHONY : src/sky_box/cubemaps_skybox.s
 
 # target to generate assembly for a file
-src/bloom/bloom.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/bloom/bloom.cpp.s
-.PHONY : src/bloom/bloom.cpp.s
+src/sky_box/cubemaps_skybox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/sky_box/cubemaps_skybox.cpp.s
+.PHONY : src/sky_box/cubemaps_skybox.cpp.s
 
 third_dependencies/glad/src/glad.o: third_dependencies/glad/src/glad.c.o
 .PHONY : third_dependencies/glad/src/glad.o
@@ -306,9 +306,9 @@ help:
 	@echo "... glfw"
 	@echo "... glm"
 	@echo "... soil"
-	@echo "... src/bloom/bloom.o"
-	@echo "... src/bloom/bloom.i"
-	@echo "... src/bloom/bloom.s"
+	@echo "... src/sky_box/cubemaps_skybox.o"
+	@echo "... src/sky_box/cubemaps_skybox.i"
+	@echo "... src/sky_box/cubemaps_skybox.s"
 	@echo "... third_dependencies/glad/src/glad.o"
 	@echo "... third_dependencies/glad/src/glad.i"
 	@echo "... third_dependencies/glad/src/glad.s"

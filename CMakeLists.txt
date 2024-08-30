@@ -50,7 +50,7 @@ include_directories(./third_dependencies/glm)
 include_directories(./third_dependencies/soil/inc)
 
 # 添加源文件
-file(GLOB source CONFIGURE_DEPENDS ./src/bloom/*.cpp ./third_dependencies/glad/src/*.c ./src/*.h)
+file(GLOB source CONFIGURE_DEPENDS ./src/sky_box/*.cpp ./third_dependencies/glad/src/*.c ./src/*.h)
 
 # 程序入口
 add_executable(app ${source})

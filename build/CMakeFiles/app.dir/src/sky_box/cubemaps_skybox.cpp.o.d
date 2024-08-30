@@ -1,5 +1,5 @@
-CMakeFiles/app.dir/src/bloom/bloom.cpp.o: \
-  /Users/joma/cpp_project/opengl_test/src/bloom/bloom.cpp \
+CMakeFiles/app.dir/src/sky_box/cubemaps_skybox.cpp.o: \
+  /Users/joma/cpp_project/opengl_test/src/sky_box/cubemaps_skybox.cpp \
   /Users/joma/cpp_project/opengl_test/./third_dependencies/glad/include/glad/glad.h \
   /Users/joma/cpp_project/opengl_test/./third_dependencies/glad/include/KHR/khrplatform.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdint.h \
@@ -1134,8 +1134,8 @@ CMakeFiles/app.dir/src/bloom/bloom.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bitset \
-  /Users/joma/cpp_project/opengl_test/src/bloom/../stb_image.h \
-  /Users/joma/cpp_project/opengl_test/src/bloom/../shader.h \
+  /Users/joma/cpp_project/opengl_test/src/sky_box/../stb_image.h \
+  /Users/joma/cpp_project/opengl_test/src/sky_box/../shader.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/fstream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/filesystem \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
@@ -1157,4 +1157,4 @@ CMakeFiles/app.dir/src/bloom/bloom.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/sstream \
-  /Users/joma/cpp_project/opengl_test/src/bloom/../camera.h
+  /Users/joma/cpp_project/opengl_test/src/sky_box/../camera.h

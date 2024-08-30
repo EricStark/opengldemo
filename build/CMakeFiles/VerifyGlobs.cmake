@@ -16,9 +16,9 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # source at CMakeLists.txt:53 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/joma/cpp_project/opengl_test/./src/bloom/*.cpp")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/joma/cpp_project/opengl_test/./src/sky_box/*.cpp")
 set(OLD_GLOB
-  "/Users/joma/cpp_project/opengl_test/./src/bloom/bloom.cpp"
+  "/Users/joma/cpp_project/opengl_test/./src/sky_box/cubemaps_skybox.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

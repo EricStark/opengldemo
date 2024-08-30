@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/joma/cpp_project/opengl_test/third_dependencies/glad/src/glad.c" "CMakeFiles/app.dir/third_dependencies/glad/src/glad.c.o" "gcc" "CMakeFiles/app.dir/third_dependencies/glad/src/glad.c.o.d"
-  "/Users/joma/cpp_project/opengl_test/src/bloom/bloom.cpp" "CMakeFiles/app.dir/src/bloom/bloom.cpp.o" "gcc" "CMakeFiles/app.dir/src/bloom/bloom.cpp.o.d"
+  "/Users/joma/cpp_project/opengl_test/src/sky_box/cubemaps_skybox.cpp" "CMakeFiles/app.dir/src/sky_box/cubemaps_skybox.cpp.o" "gcc" "CMakeFiles/app.dir/src/sky_box/cubemaps_skybox.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
