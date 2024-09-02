@@ -240,29 +240,29 @@ soil/fast:
 	$(MAKE) $(MAKESILENT) -f third_dependencies/soil/CMakeFiles/soil.dir/build.make third_dependencies/soil/CMakeFiles/soil.dir/build
 .PHONY : soil/fast
 
-src/sky_box/cubemaps_skybox.o: src/sky_box/cubemaps_skybox.cpp.o
-.PHONY : src/sky_box/cubemaps_skybox.o
+src/instance_quad/instancing_quads.o: src/instance_quad/instancing_quads.cpp.o
+.PHONY : src/instance_quad/instancing_quads.o
 
 # target to build an object file
-src/sky_box/cubemaps_skybox.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/sky_box/cubemaps_skybox.cpp.o
-.PHONY : src/sky_box/cubemaps_skybox.cpp.o
+src/instance_quad/instancing_quads.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/instance_quad/instancing_quads.cpp.o
+.PHONY : src/instance_quad/instancing_quads.cpp.o
 
-src/sky_box/cubemaps_skybox.i: src/sky_box/cubemaps_skybox.cpp.i
-.PHONY : src/sky_box/cubemaps_skybox.i
+src/instance_quad/instancing_quads.i: src/instance_quad/instancing_quads.cpp.i
+.PHONY : src/instance_quad/instancing_quads.i
 
 # target to preprocess a source file
-src/sky_box/cubemaps_skybox.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/sky_box/cubemaps_skybox.cpp.i
-.PHONY : src/sky_box/cubemaps_skybox.cpp.i
+src/instance_quad/instancing_quads.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/instance_quad/instancing_quads.cpp.i
+.PHONY : src/instance_quad/instancing_quads.cpp.i
 
-src/sky_box/cubemaps_skybox.s: src/sky_box/cubemaps_skybox.cpp.s
-.PHONY : src/sky_box/cubemaps_skybox.s
+src/instance_quad/instancing_quads.s: src/instance_quad/instancing_quads.cpp.s
+.PHONY : src/instance_quad/instancing_quads.s
 
 # target to generate assembly for a file
-src/sky_box/cubemaps_skybox.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/sky_box/cubemaps_skybox.cpp.s
-.PHONY : src/sky_box/cubemaps_skybox.cpp.s
+src/instance_quad/instancing_quads.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/instance_quad/instancing_quads.cpp.s
+.PHONY : src/instance_quad/instancing_quads.cpp.s
 
 third_dependencies/glad/src/glad.o: third_dependencies/glad/src/glad.c.o
 .PHONY : third_dependencies/glad/src/glad.o
@@ -306,9 +306,9 @@ help:
 	@echo "... glfw"
 	@echo "... glm"
 	@echo "... soil"
-	@echo "... src/sky_box/cubemaps_skybox.o"
-	@echo "... src/sky_box/cubemaps_skybox.i"
-	@echo "... src/sky_box/cubemaps_skybox.s"
+	@echo "... src/instance_quad/instancing_quads.o"
+	@echo "... src/instance_quad/instancing_quads.i"
+	@echo "... src/instance_quad/instancing_quads.s"
 	@echo "... third_dependencies/glad/src/glad.o"
 	@echo "... third_dependencies/glad/src/glad.i"
 	@echo "... third_dependencies/glad/src/glad.s"
