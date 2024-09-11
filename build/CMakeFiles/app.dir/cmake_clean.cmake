@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/app.dir/src/instance_quad/instancing_quads.cpp.o"
-  "CMakeFiles/app.dir/src/instance_quad/instancing_quads.cpp.o.d"
+  "CMakeFiles/app.dir/src/pbr_ibl/ibl_specular_textured.cpp.o"
+  "CMakeFiles/app.dir/src/pbr_ibl/ibl_specular_textured.cpp.o.d"
   "CMakeFiles/app.dir/third_dependencies/glad/src/glad.c.o"
   "CMakeFiles/app.dir/third_dependencies/glad/src/glad.c.o.d"
   "bin/app"

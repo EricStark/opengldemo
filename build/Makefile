@@ -240,29 +240,29 @@ soil/fast:
 	$(MAKE) $(MAKESILENT) -f third_dependencies/soil/CMakeFiles/soil.dir/build.make third_dependencies/soil/CMakeFiles/soil.dir/build
 .PHONY : soil/fast
 
-src/instance_quad/instancing_quads.o: src/instance_quad/instancing_quads.cpp.o
-.PHONY : src/instance_quad/instancing_quads.o
+src/pbr_ibl/ibl_specular_textured.o: src/pbr_ibl/ibl_specular_textured.cpp.o
+.PHONY : src/pbr_ibl/ibl_specular_textured.o
 
 # target to build an object file
-src/instance_quad/instancing_quads.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/instance_quad/instancing_quads.cpp.o
-.PHONY : src/instance_quad/instancing_quads.cpp.o
+src/pbr_ibl/ibl_specular_textured.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/pbr_ibl/ibl_specular_textured.cpp.o
+.PHONY : src/pbr_ibl/ibl_specular_textured.cpp.o
 
-src/instance_quad/instancing_quads.i: src/instance_quad/instancing_quads.cpp.i
-.PHONY : src/instance_quad/instancing_quads.i
+src/pbr_ibl/ibl_specular_textured.i: src/pbr_ibl/ibl_specular_textured.cpp.i
+.PHONY : src/pbr_ibl/ibl_specular_textured.i
 
 # target to preprocess a source file
-src/instance_quad/instancing_quads.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/instance_quad/instancing_quads.cpp.i
-.PHONY : src/instance_quad/instancing_quads.cpp.i
+src/pbr_ibl/ibl_specular_textured.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/pbr_ibl/ibl_specular_textured.cpp.i
+.PHONY : src/pbr_ibl/ibl_specular_textured.cpp.i
 
-src/instance_quad/instancing_quads.s: src/instance_quad/instancing_quads.cpp.s
-.PHONY : src/instance_quad/instancing_quads.s
+src/pbr_ibl/ibl_specular_textured.s: src/pbr_ibl/ibl_specular_textured.cpp.s
+.PHONY : src/pbr_ibl/ibl_specular_textured.s
 
 # target to generate assembly for a file
-src/instance_quad/instancing_quads.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/instance_quad/instancing_quads.cpp.s
-.PHONY : src/instance_quad/instancing_quads.cpp.s
+src/pbr_ibl/ibl_specular_textured.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/pbr_ibl/ibl_specular_textured.cpp.s
+.PHONY : src/pbr_ibl/ibl_specular_textured.cpp.s
 
 third_dependencies/glad/src/glad.o: third_dependencies/glad/src/glad.c.o
 .PHONY : third_dependencies/glad/src/glad.o
@@ -306,9 +306,9 @@ help:
 	@echo "... glfw"
 	@echo "... glm"
 	@echo "... soil"
-	@echo "... src/instance_quad/instancing_quads.o"
-	@echo "... src/instance_quad/instancing_quads.i"
-	@echo "... src/instance_quad/instancing_quads.s"
+	@echo "... src/pbr_ibl/ibl_specular_textured.o"
+	@echo "... src/pbr_ibl/ibl_specular_textured.i"
+	@echo "... src/pbr_ibl/ibl_specular_textured.s"
 	@echo "... third_dependencies/glad/src/glad.o"
 	@echo "... third_dependencies/glad/src/glad.i"
 	@echo "... third_dependencies/glad/src/glad.s"

@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/joma/cpp_project/opengl_test/third_dependencies/glad/src/glad.c" "CMakeFiles/app.dir/third_dependencies/glad/src/glad.c.o" "gcc" "CMakeFiles/app.dir/third_dependencies/glad/src/glad.c.o.d"
-  "/Users/joma/cpp_project/opengl_test/src/instance_quad/instancing_quads.cpp" "CMakeFiles/app.dir/src/instance_quad/instancing_quads.cpp.o" "gcc" "CMakeFiles/app.dir/src/instance_quad/instancing_quads.cpp.o.d"
+  "/Users/joma/cpp_project/opengl_test/src/pbr_ibl/ibl_specular_textured.cpp" "CMakeFiles/app.dir/src/pbr_ibl/ibl_specular_textured.cpp.o" "gcc" "CMakeFiles/app.dir/src/pbr_ibl/ibl_specular_textured.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
